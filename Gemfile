@@ -17,9 +17,6 @@ gem 'rake'
 # effort. We've used it for creating our embedded demo website
 gem 'sinatra'
 
-# Sinatra recommends using Thin. Thin is a "Tiny, fast & funny HTTP server"
-gem 'thin'
-
 # This groups covers gems which should be installed if you are actively working
 # on Quke-example itself.
 group :development do

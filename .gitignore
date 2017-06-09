@@ -13,9 +13,9 @@ vendor/overcommit_bundle
 /tags
 
 *~
-.DS_Store
+*.DS_Store
 .svn
-.*.swp
+*.swp
 ___*
 chromedriver.log
 
