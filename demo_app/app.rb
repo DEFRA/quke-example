@@ -72,3 +72,9 @@ get '/cssselector' do
   @title = 'CSS selector'
   erb :css_selector
 end
+
+get '/request' do
+  @title = 'Request details'
+  @results = request.env
+  erb :request_details
+end
