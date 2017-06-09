@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'quke'
-# gem 'quke', path: '/Users/acruikshanks/projects/ea/quke'
 
 # Rake gives us the ability to create our own commands or 'tasks' for working
 # with quke. We have it setup to start the demo app and to clear the /tmp for
