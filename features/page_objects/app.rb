@@ -20,4 +20,8 @@ class App
   def css_selectors_page
     @last_page = CssSelectorsPage.new
   end
+
+  def request_details_page
+    @last_page = RequestDetailsPage.new
+  end
 end

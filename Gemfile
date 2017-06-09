@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'quke'
-# gem 'quke', path: '/Users/acruikshanks/projects/ea/quke'
 
 # Rake gives us the ability to create our own commands or 'tasks' for working
 # with quke. We have it setup to start the demo app and to clear the /tmp for
@@ -16,9 +15,6 @@ gem 'rake'
 # Sinatra is a DSL for quickly creating web applications in Ruby with minimal
 # effort. We've used it for creating our embedded demo website
 gem 'sinatra'
-
-# Sinatra recommends using Thin. Thin is a "Tiny, fast & funny HTTP server"
-gem 'thin'
 
 # This groups covers gems which should be installed if you are actively working
 # on Quke-example itself.
