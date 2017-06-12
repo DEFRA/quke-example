@@ -78,3 +78,9 @@ get '/request' do
   @results = request.env
   erb :request_details
 end
+
+get '/jserror' do
+  @title = 'JavaScript error'
+  @results = "Open your browser's dev tools, specifically the JavaScript console. You should see an error!"
+  erb :javascript_error
+end

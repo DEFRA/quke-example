@@ -24,4 +24,8 @@ class App
   def request_details_page
     @last_page = RequestDetailsPage.new
   end
+
+  def javascript_error_page
+    @last_page = JavascriptErrorPage.new
+  end
 end
