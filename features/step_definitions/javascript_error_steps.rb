@@ -6,7 +6,8 @@ Given(/^I am on the home page$/) do
 end
 
 When(/^I go to the JavaScript error page$/) do
-  expect { @app.javascript_error_page.load }.to raise_error(Capybara::Poltergeist::JavascriptError)
+  @app.javascript_error_page.load
+  expect(errors).not_to be_empty
 end
 
 Then(/^It should show we have an error$/) do
@@ -23,7 +24,8 @@ Given(/^I'm at the home page$/) do
 end
 
 When(/^I navigate to the JavaScript error page$/) do
-  expect { visit('/jserror') }.to raise_error(Capybara::Poltergeist::JavascriptError)
+  visit('/jserror')
+  expect(errors).not_to be_empty
 end
 
 Then(/^I should see we have an error$/) do
@@ -31,4 +33,13 @@ Then(/^I should see we have an error$/) do
   # block us from continuing. However the scenario reads better if we can break
   # it down.
   true
+end
+
+def errors
+  raise 'Checking for JavaScript errors is only supported by Chrome' unless Capybara.current_driver == :chrome
+
+  page.driver.browser.manage.logs.get(:browser)
+      .select { |e| e.level == 'SEVERE' && e.message }
+      .map(&:message)
+      .to_a
 end
