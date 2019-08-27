@@ -26,45 +26,19 @@ bundle install
 
 ## Configuration
 
-You can figure out how the project runs using [Quke config files](https://github.com/DEFRA/quke#configuration). Before executing this project for the first time you'll need to create an initial `.config.yml` file.
+You can figure out how the project runs using [Quke config files](https://github.com/DEFRA/quke#configuration). This project comes with an existing `.config.yml` file setup to allow these tests to pass.
 
-```bash
-touch .config.yml
-```
-
-Add the contents of the example below to the file to get you started, but check out [the full example](https://github.com/DEFRA/quke/blob/master/.config.example.yml) in **Quke** for full details on what you can configure.
-
-```yaml
-# Normally Capybara expects to be testing an in-process Rack application, but
-# we're using it to talk to a remote host. Users of Quke can set what this will
-# be by simply setting `app_host`. You can then use it directly using
-# Capybara `visit('/Main_Page')` or `visit('/')` rather than having to repeat
-# the full url each time. When using the Site_Prism page_objects use
-# `set_url '/Main_Page'`. The default is ''.
-app_host: "http://localhost:4567"
-
-# Tells Quke which browser to use for testing. Choices are firefox, chrome
-# browserstack and phantomjs, with the default being phantomjs.
-driver: phantomjs
-
-# Tell the driver Quke is using to send a different user-agent value to the site
-# under test. Useful if you want the underlying driver to spoof what kind of
-# browser the request is coming from. For example you may want to pretend to be
-# a mobile browser so you can check what you get back versus the desktop
-# version. Or you want to pretend to be another kind of browser, because the one
-# you have is not supported by the site.
-# Set here because we have a feature that tests this functionality
-user_agent: "Mozilla/5.0 (MSIE 10.0; Windows NT 6.1; Trident/5.0)"
-```
+Feel free to amend the values in `.config.yml` to see how they effect the way Quke runs.
 
 ## Setup
+
 You'll then need to start the demo app which the examples run against
 
 ```bash
 ruby demo_app/app.rb
 ```
 
-***Note*** *If you are intending to make changes to the **demo_app**, use `bundle exec rerun demo_app/app.rb` instead. This will save you having to restart it after every change.*
+***Note*** *If you are intending to make changes to the **demo_app** for example because you are experimenting with a new test, use `bundle exec rerun demo_app/app.rb` instead. This will save you having to restart it after every change.*
 
 ## Execution
 
@@ -87,4 +61,3 @@ All contributions should be submitted via a pull request.
 This information is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 > If you don't add a license it's neither free or open
-
