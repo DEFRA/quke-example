@@ -14,3 +14,9 @@ desc 'Delete all Capybara saved pages in the tmp directory'
 task :clean do
   File.delete(*Dir.glob('tmp/capybara-*.html'))
 end
+
+require "quke"
+
+# Add support to quke to run the webdriver rake tasks
+# https://github.com/titusfortner/webdrivers#rake-tasks
+load "quke/Rakefile"
