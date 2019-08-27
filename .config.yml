@@ -1,0 +1,8 @@
+# Local
+app_host: "http://localhost:4567"
+driver: chrome
+headless: true
+stop_on_error: false
+display_failures: false
+max_wait_time: 5
+user_agent: "Mozilla/5.0 (MSIE 10.0; Windows NT 6.1; Trident/5.0)"
