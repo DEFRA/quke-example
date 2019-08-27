@@ -38,6 +38,3 @@ chromedriver.log
 # Capybara related artifacts
 capybara-*.html
 output.html
-
-# Ignore your project specific .config.yml config files
-*.config.yml
