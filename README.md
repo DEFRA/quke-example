@@ -1,6 +1,7 @@
 # Quke example
 
-[![Build Status](https://travis-ci.com/Cruikshanks/quke-example.svg?branch=master)](https://travis-ci.com/Cruikshanks/quke-example)
+[![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=master)](https://travis-ci.com/DEFRA/quke-example)
+[![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
 This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either Capybara or SitePrism in your steps to interact with a web page.
 
@@ -17,7 +18,7 @@ The rest of the pre-requisites are the same as those for [Quke](https://github.c
 First clone the repository and then drop into your new local repo
 
 ```bash
-git clone https://github.com/Cruikshanks/quke-example.git && cd quke-example
+git clone https://github.com/DEFRA/quke-example.git && cd quke-example
 ```
 
 Next download and install the dependencies
@@ -62,6 +63,16 @@ All contributions should be submitted via a pull request.
 
 ## License
 
-This information is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+THIS INFORMATION IS LICENSED UNDER THE CONDITIONS OF THE OPEN GOVERNMENT LICENCE found at:
 
-> If you don't add a license it's neither free or open
+<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3>
+
+The following attribution statement MUST be cited in your products and applications when using this information.
+
+> Contains public sector information licensed under the Open Government license v3
+
+### About the license
+
+The Open Government Licence (OGL) was developed by the Controller of Her Majesty's Stationery Office (HMSO) to enable information providers in the public sector to license the use and re-use of their information under a common open licence.
+
+It is designed to encourage use and re-use of information freely and flexibly, with only a few conditions.
