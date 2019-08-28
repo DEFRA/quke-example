@@ -1,5 +1,7 @@
 # Quke example
 
+[![Build Status](https://travis-ci.com/Cruikshanks/quke-example.svg?branch=master)](https://travis-ci.com/Cruikshanks/quke-example)
+
 This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either Capybara or SitePrism in your steps to interact with a web page.
 
 **Please note**. The one exception is the [demo_app](app) folder. The tests in this example run against a dummy web site whose code lives in this folder. We put it here so we are not dependent on an external site nor an internet connection in order for the examples to work.
