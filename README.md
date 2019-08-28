@@ -9,7 +9,7 @@ This repo serves as an example [Quke](https://github.com/Defra/quke) project. Re
 
 ## Pre-requisites
 
-This project is setup to run against version 2.2.5 of Ruby.
+This project is setup to run against version 2.4.2 of Ruby, though as long as you have this or something greater it shouldn't matter. You'll also need the [Bundler](http://bundler.io/) gem.
 
 The rest of the pre-requisites are the same as those for [Quke](https://github.com/DEFRA/quke#pre-requisites).
 
@@ -40,10 +40,8 @@ You can amend the values in `.config.yml` to see how they effect the way Quke ru
 You'll then need to start the demo app which the examples run against
 
 ```bash
-ruby demo_app/app.rb
+bundle exec rake run
 ```
-
-***Note*** *If you are intending to make changes to the **demo_app** for example because you are experimenting with a new test, use `bundle exec rerun demo_app/app.rb` instead. This will save you having to restart it after every change.*
 
 ## Execution
 
