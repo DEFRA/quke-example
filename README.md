@@ -1,6 +1,7 @@
 # Quke example
 
 [![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=master)](https://travis-ci.com/DEFRA/quke-example)
+[![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
 This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either Capybara or SitePrism in your steps to interact with a web page.
 
