@@ -1,6 +1,6 @@
 # Quke example
 
-[![Build Status](https://travis-ci.com/Cruikshanks/quke-example.svg?branch=master)](https://travis-ci.com/Cruikshanks/quke-example)
+[![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=master)](https://travis-ci.com/DEFRA/quke-example)
 
 This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either Capybara or SitePrism in your steps to interact with a web page.
 
@@ -17,7 +17,7 @@ The rest of the pre-requisites are the same as those for [Quke](https://github.c
 First clone the repository and then drop into your new local repo
 
 ```bash
-git clone https://github.com/Cruikshanks/quke-example.git && cd quke-example
+git clone https://github.com/DEFRA/quke-example.git && cd quke-example
 ```
 
 Next download and install the dependencies
