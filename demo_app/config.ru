@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The config.ru file allows us to use any Rack handler, which in our case is
 # [Thin](https://github.com/macournoyer/thin) to start the app, rather than
 # relying on Sinatra magic.

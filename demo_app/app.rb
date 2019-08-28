@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 
 # This require was only added to stop this warning from appearing in the output
@@ -15,7 +17,7 @@ configure do
 
   # It's not critical for this app, but best practise is to secure your session
   # with a secret key, and this also stops Sinatra complaining!
-  set :session_secret, SECRET ||= 'super secret'.freeze
+  set :session_secret, SECRET ||= 'super secret'
 end
 
 get '/' do
@@ -81,6 +83,7 @@ end
 
 get '/jserror' do
   @title = 'JavaScript error'
-  @results = "Open your browser's dev tools, specifically the JavaScript console. You should see an error!"
+  @results = "Open your browser's dev tools, specifically the JavaScript"\
+             'console. You should see an error!'
   erb :javascript_error
 end

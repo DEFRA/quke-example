@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Search page
 class SearchPage < SitePrism::Page
   set_url '/search'
