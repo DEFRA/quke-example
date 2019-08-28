@@ -15,7 +15,7 @@ git:
 before_install:
   - export TZ=UTC
   - gem install -v 1.17.2 bundler --no-rdoc --no-ri
-  - ruby demo_app/app.rb
+  - bundle exec rake run
 
 script:
   - bundle exec quke
