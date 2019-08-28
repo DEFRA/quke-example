@@ -15,6 +15,8 @@ git:
 before_install:
   - export TZ=UTC
   - gem install -v 1.17.2 bundler --no-rdoc --no-ri
+
+before_script:
   - bundle exec rake run
 
 script:
