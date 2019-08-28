@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Request details page
 class RequestDetailsPage < SitePrism::Page
   set_url '/request'

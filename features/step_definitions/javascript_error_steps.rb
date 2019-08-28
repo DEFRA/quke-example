@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The following steps use the page objects to drive the browser
 Given(/^I am on the home page$/) do
   @app = App.new
@@ -36,7 +38,9 @@ Then(/^I should see we have an error$/) do
 end
 
 def errors
-  raise 'Checking for JavaScript errors is only supported by Chrome' unless Capybara.current_driver == :chrome
+  if Capybara.current_driver == :chrome
+    raise 'Checking for JavaScript errors is only supported by Chrome'
+  end
 
   page.driver.browser.manage.logs.get(:browser)
       .select { |e| e.level == 'SEVERE' && e.message }

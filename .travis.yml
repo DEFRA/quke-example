@@ -17,6 +17,7 @@ before_install:
   - gem install -v 1.17.2 bundler --no-rdoc --no-ri
 
 before_script:
+  - bundle exec rubocop
   - nohup bundle exec rake run > nohup.out 2>&1 &
 
 script:

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The following steps use the page objects to drive the browser
 Given(/^I am on the request details page$/) do
   @app = App.new

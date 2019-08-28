@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # CSS selectors page
 class CssSelectorsPage < SitePrism::Page
   set_url '/cssselector'

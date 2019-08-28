@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The following steps use the page objects to drive the browser
 # -------------------------------------------------------------
 
