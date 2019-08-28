@@ -38,3 +38,6 @@ chromedriver.log
 # Capybara related artifacts
 capybara-*.html
 output.html
+
+# Local testing config files
+.config.*.yml

@@ -28,7 +28,9 @@ bundle install
 
 You can figure out how the project runs using [Quke config files](https://github.com/DEFRA/quke#configuration). This project comes with an existing `.config.yml` file setup to allow these tests to pass.
 
-Feel free to amend the values in `.config.yml` to see how they effect the way Quke runs.
+### Experimenting & testing
+
+You can amend the values in `.config.yml` to see how they effect the way Quke runs or alternatively create your own, for example `.config.test.yml`. If you stick to the convention of `.config.[my name].yml` [Git](https://git-scm.com/) will ignore your file which means you can put whatever you like in them and not risk the content being committed to source control!
 
 ## Setup
 
