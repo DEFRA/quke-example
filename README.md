@@ -4,9 +4,7 @@
 [![security](https://hakiri.io/github/DEFRA/quke-example/master.svg)](https://hakiri.io/github/DEFRA/quke-example/master)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
-This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either Capybara or SitePrism in your steps to interact with a web page.
-
-**Please note**. The one exception is the [demo_app](app) folder. The tests in this example run against a dummy web site whose code lives in this folder. We put it here so we are not dependent on an external site nor an internet connection in order for the examples to work.
+This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either [Capybara](https://github.com/teamcapybara/capybara) or [SitePrism](https://github.com/site-prism/site_prism) in your steps to interact with a web page.
 
 ## Pre-requisites
 
@@ -30,7 +28,7 @@ bundle install
 
 ## Configuration
 
-You can figure out how the project runs using [Quke config files](https://github.com/DEFRA/quke#configuration). This project comes with an existing `.config.yml` file setup to allow these tests to pass.
+You can figure out how the project runs using [Quke config files](https://github.com/DEFRA/quke#configuration). This project comes with an existing `.config.yml` file setup to allow the tests to pass.
 
 ### Experimenting & testing
 
@@ -44,7 +42,9 @@ You'll then need to start the demo app which the examples run against
 bundle exec rake run
 ```
 
-## Execution
+You'll want to do this in a separate terminal window as its a long lived task, which means the only way to get back to the command line is with `ctrl+c`!
+
+## Running the tests
 
 Simply call
 
@@ -52,7 +52,7 @@ Simply call
 bundle exec quke
 ```
 
-All being well all the tests should pass. You can now experiment with the examples provided, add your own, and get familiar with how to write your own **Cucumber** tests.
+All being well all the tests should pass. You can now experiment with the examples provided, add your own, and get familiar with how to write your own **Cucumber** scenarios.
 
 ## Contributing to this project
 
