@@ -5,7 +5,10 @@ task default: %w[run]
 
 desc 'Run demo web app (is the website against which the examples run)'
 task :run do
-  trap('SIGINT') { puts 'Quke demo app has finished'; exit }
+  trap('SIGINT') do
+    puts 'Quke demo app has finished'
+    exit
+  end
   sh %( bundle exec quke_demo_app )
 end
 
