@@ -5,11 +5,11 @@ task default: %w[run]
 
 desc 'Run demo web app (is the website against which the examples run)'
 task :run do
-  if Gem::Specification.find_all_by_name('rerun').any?
-    sh %( rerun --ignore 'features/' demo_app/app.rb )
-  else
-    sh %( bundle exec ruby demo_app/app.rb )
+  trap('SIGINT') do
+    puts 'Quke demo app has finished'
+    exit
   end
+  sh %( bundle exec quke_demo_app )
 end
 
 desc 'Delete all Capybara saved pages in the tmp directory'

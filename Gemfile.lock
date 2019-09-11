@@ -18,7 +18,6 @@ GEM
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    ast (2.4.0)
     backports (3.15.0)
     browserstack-local (1.3.0)
     builder (3.2.3)
@@ -49,15 +48,9 @@ GEM
     cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
     diff-lcs (1.3)
-    ffi (1.10.0)
     gherkin (5.1.0)
-    jaro_winkler (1.5.3)
     launchy (2.4.3)
       addressable (~> 2.3)
-    listen (3.1.5)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-      ruby_dep (~> 1.2)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     multi_json (1.13.1)
@@ -65,36 +58,21 @@ GEM
     mustermann (1.0.3)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
-    parallel (1.17.0)
-    parser (2.6.3.0)
-      ast (~> 2.4.0)
     public_suffix (3.1.1)
+    quke_demo_app (0.2.0)
+      sinatra (~> 2.0.2)
+      thor
     rack (2.0.7)
     rack-protection (2.0.7)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rainbow (3.0.0)
     rake (12.3.3)
-    rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
-      ffi (~> 1.0)
     regexp_parser (1.6.0)
-    rerun (0.13.0)
-      listen (~> 3.0)
     rspec-expectations (3.8.4)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.74.0)
-      jaro_winkler (~> 1.5.1)
-      parallel (~> 1.10)
-      parser (>= 2.6)
-      rainbow (>= 2.2.2, < 4.0)
-      ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 1.7)
-    ruby-progressbar (1.10.1)
-    ruby_dep (1.5.0)
     rubyzip (1.2.3)
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
@@ -109,8 +87,8 @@ GEM
       capybara (~> 3.3)
       site_prism-all_there (~> 0.2.0)
     site_prism-all_there (0.2.1)
+    thor (0.20.3)
     tilt (2.0.9)
-    unicode-display_width (1.6.0)
     webdrivers (4.1.2)
       nokogiri (~> 1.6)
       rubyzip (~> 1.0)
@@ -123,10 +101,8 @@ PLATFORMS
 
 DEPENDENCIES
   quke!
+  quke_demo_app
   rake
-  rerun
-  rubocop
-  sinatra
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
