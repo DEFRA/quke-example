@@ -1,11 +1,13 @@
 # The following options are needed to support headless chrome testing
 dist: trusty
+
 addons:
   chrome: stable
 
 language: ruby
 rvm: 2.4.2
 cache: bundler
+
 # Travis CI clones repositories to a depth of 50 commits, which is only really
 # useful if you are performing git operations.
 # https://docs.travis-ci.com/user/customizing-the-build/#Git-Clone-Depth
@@ -14,11 +16,9 @@ git:
 
 before_install:
   - export TZ=UTC
-  - gem install -v 1.17.2 bundler --no-rdoc --no-ri
-  - gem install rubocop --no-rdoc --no-ri
+  - gem install -v 1.17.3 bundler --no-rdoc --no-ri
 
 before_script:
-  - rubocop
   - nohup bundle exec rake run > nohup.out 2>&1 &
 
 script:
