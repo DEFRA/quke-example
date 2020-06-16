@@ -16,7 +16,7 @@ git:
 
 before_install:
   - export TZ=UTC
-  - gem install -v 1.17.3 bundler --no-rdoc --no-ri
+  - gem install -v 1.17.3 bundler --no-document
 
 before_script:
   - nohup bundle exec rake run > nohup.out 2>&1 &
