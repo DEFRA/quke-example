@@ -61,7 +61,7 @@ GEM
     quke_demo_app (0.2.0)
       sinatra (~> 2.0.2)
       thor
-    rack (2.2.2)
+    rack (2.2.3)
     rack-protection (2.0.7)
       rack
     rack-test (1.1.0)
