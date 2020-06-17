@@ -1,7 +1,7 @@
 # Quke example
 
-[![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=master)](https://travis-ci.com/DEFRA/quke-example)
-[![security](https://hakiri.io/github/DEFRA/quke-example/master.svg)](https://hakiri.io/github/DEFRA/quke-example/master)
+[![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=main)](https://travis-ci.com/DEFRA/quke-example)
+[![security](https://hakiri.io/github/DEFRA/quke-example/main.svg)](https://hakiri.io/github/DEFRA/quke-example/main)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
 This repo serves as an example [Quke](https://github.com/Defra/quke) project. Refer to it for examples on how to setup your own projects, and how to use either [Capybara](https://github.com/teamcapybara/capybara) or [SitePrism](https://github.com/site-prism/site_prism) in your steps to interact with a web page.
