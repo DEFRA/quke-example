@@ -19,10 +19,6 @@ jobs:
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      # Performs a clean installation of all dependencies in the `Gemfile.lock` file
-      - name: Install dependencies
-        run: bundle install
-
       # Start our test app which we use to run our example scenarios against
       - name: Start example app
         run: |
