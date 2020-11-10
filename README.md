@@ -1,6 +1,6 @@
 # Quke example
 
-[![Build Status](https://travis-ci.com/DEFRA/quke-example.svg?branch=main)](https://travis-ci.com/DEFRA/quke-example)
+![Build Status](https://github.com/DEFRA/quke-example/workflows/CI/badge.svg?branch=main)
 [![security](https://hakiri.io/github/DEFRA/quke-example/main.svg)](https://hakiri.io/github/DEFRA/quke-example/main)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
